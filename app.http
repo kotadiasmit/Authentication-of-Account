@@ -1,0 +1,44 @@
+
+POST http://localhost:3000/register
+Content-Type: application/json
+
+//leave a line space b/w header & body//
+{
+  "username": "adam_",
+  "name": "Adam Richard",
+  "password": "richard_567",
+  "gender": "male",
+  "location": "Detroit"
+}
+###
+POST http://localhost:3000/register
+Content-Type: application/json
+
+//leave a line space b/w header & body//
+{
+  "username": "abc",
+  "name": "Adam Richard",
+  "password": "abchard_567",
+  "gender": "male",
+  "location": "Detroit"
+}
+###
+POST http://localhost:3000/login
+Content-Type: application/json
+
+//leave a line space b/w header & body//
+{
+  "username": "adam_richard",
+  "password": "richard@123"
+}
+
+
+###
+PUT http://localhost:3000/change-password
+Content-Type: application/json
+
+{
+  "username": "adam_richard",
+  "oldPassword": "richard_567",
+  "newPassword": "richard@123"
+}
